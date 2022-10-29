@@ -159,7 +159,7 @@ async def _(
         r18 = 1
         num = 10
     elif cmd[0] == "色图r" and isinstance(event, GroupMessageEvent):
-        if not Config.get_config("send_setu", "ALLOW_GROUP_R18"):
+        if not Config.get_config("send_setu", "ALLOW_GROUP_R18") and not str(event.user_id) in bot.config.superusers:
             await setu.finish(
                 random.choice(["这种不好意思的东西怎么可能给这么多人看啦", "羞羞脸！给我滚出克私聊！", "变态变态变态变态大变态！"])
             )

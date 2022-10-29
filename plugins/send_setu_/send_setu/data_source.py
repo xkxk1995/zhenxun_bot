@@ -72,8 +72,8 @@ async def get_setu_urls(
 
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6;"
-    " rv:2.0.1) Gecko/20100101 Firefox/4.0.1",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 "
+                  "Safari/537.36 SE 2.X MetaSr 1.0",
     "Referer": "https://www.pixiv.net",
 }
 
